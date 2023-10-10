@@ -1,0 +1,120 @@
+server:
+  port: 10002
+
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: common_message-service_common-message-execute_pg
+    send-message-timeout: 2000
+    retry-times-when-send-failed: 1
+    retry-times-when-send-async-failed: 1
+
+framework:
+  cache:
+    redis:
+      prefix: '${spring.application.name}:'
+      value-timeout: 50000
+
+spring:
+  application:
+    name: message-service
+
+  profiles:
+    active: dev
+
+  dynamic:
+    thread-pool:
+      server-addr: 127.0.0.1:6691
+      username: admin
+      password: 123456
+      namespace: public
+      item-id: message-service
+
+  redis:
+    bloom-filter:
+      expected-insertions: 100000000
+      false-probability: 0.03
+    host: localhost
+    # password: 123456
+    port: 6379
+
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8686
+        port: 8719
+
+  shardingsphere:
+    datasource:
+      ds-0:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://${date-source.domain:localhost}:3306/message_manager?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=GMT%2B8
+        username: ${date-source.username:root}
+        password: ${date-source.password:szl0905}
+      names: ds-0
+    props:
+      sql-show: true
+    rules:
+      sharding:
+        sharding-algorithms:
+          snowflake_date_algorithm:
+            props:
+              algorithmClassName: org.opengoofy.assault.messageservice.biz.algorithm.SnowflakeDateShardingAlgorithm
+              strategy: complex
+            type: CLASS_BASED
+        tables:
+          send_record:
+            actual-data-nodes: ds-0.send_record_$->{2023..2026}_m$->{1..12}
+            table-strategy:
+              complex:
+                sharding-algorithm-name: snowflake_date_algorithm
+                sharding-columns: create_time,msg_id
+          send_record_extend:
+            actual-data-nodes: ds-0.send_record_extend_$->{2023..2026}_m$->{1..12}
+            table-strategy:
+              complex:
+                sharding-algorithm-name: snowflake_date_algorithm
+                sharding-columns: create_time,msg_id
+
+message:
+  sms:
+    weight:
+      marketing:
+        weight-list:
+          - channelId: ALI_YX_001
+            weight: 6
+          - channelId: TENCENT_YX_001
+            weight: 4
+      general:
+        weight-list:
+          - channelId: ALI_HY_001
+            weight: 6
+          - channelId: TENCENT_HY_001
+            weight: 4
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: HEADERS
+        connectTimeout: 5000
+        readTimeout: 5000
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
