@@ -47,6 +47,7 @@ public class MessageQueryResponseDTO {
      * 接收者
      */
     private String receiver;
+
     
     /**
      * 抄送者
