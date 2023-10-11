@@ -81,7 +81,7 @@ public final class SnowflakeDateShardingAlgorithm implements ComplexKeysSharding
 
                 // 根据具体的分片逻辑计算实际表名
                 String actualTable = ShardModel.quarterlyModel(logicTableName, new Date(SnowflakeIdUtil.parseSnowflakeId(snowflakeId).getTimestamp()));
-                result.add(actualTable);
+                result.add(actualTable);  //根据上面的逻辑表解析出实际的表
             }
         } else {
             // 根据范围进行分片

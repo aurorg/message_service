@@ -52,7 +52,7 @@ public class MessageQueryResponseDTO {
 
     /**
      *
-     * 
+     *
      * 抄送者
      */
     private String cc;
