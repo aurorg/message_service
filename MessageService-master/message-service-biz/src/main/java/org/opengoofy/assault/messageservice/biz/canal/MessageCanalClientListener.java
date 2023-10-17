@@ -57,14 +57,14 @@ public class MessageCanalClientListener implements CommandLineRunner {
                 connector.connect();
                 connector.subscribe(SUBSCRIBE);  //订阅数据库的表
                 while (true) {
-                    Message message = connector.getWithoutAck(BATCH_SIZE); //使用连接器获取指定批次大小（BATCH_SIZE1000）的消息
-                    long batchId = message.getId(); //获取消息批次的id
+                    Message message = connector.getWithoutAck(BATCH_SIZE);  //使用连接器获取指定批次大小（BATCH_SIZE1000）的消息
+                    long batchId = message.getId();  //获取消息批次的id
                     if (batchId == -1 || message.getEntries().size() == 0) {  //检查批次 ID 是否为 -1 或者消息条目数是否为 0，判断是否没有新的数据变动。
                         ThreadUtil.sleep(1000);  //如果没有新的数据变动，等待一段时间后继续获取消息。
                         continue;
                     }
-                    printEntry(message.getEntries()); //调用 printEntry 方法处理消息的条目
-                    connector.ack(batchId); //对接收到的消息进行确认，告知 Canal 服务器已经成功处理该批次的消息
+                    printEntry(message.getEntries());  //调用 printEntry 方法处理消息的条目
+                    connector.ack(batchId);  //对接收到的消息进行确认，告知 Canal 服务器已经成功处理该批次的消息
                 }
             } finally {
                 connector.disconnect();
