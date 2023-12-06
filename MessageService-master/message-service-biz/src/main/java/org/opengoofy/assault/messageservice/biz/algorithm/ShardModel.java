@@ -64,7 +64,7 @@ public class ShardModel {
         }
         return result;
     }
-    
+
     public static void main(String[] args) {
         // 测试精确时间查询
         // 创建一个日期 fakeDate，并调用 quarterlyModel函数打印出精确时间查询的结果
