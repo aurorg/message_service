@@ -78,4 +78,5 @@ public class MessageQueryResponseDTO {
      * 接收时间
      */
     private Date receiptTime;
+
 }

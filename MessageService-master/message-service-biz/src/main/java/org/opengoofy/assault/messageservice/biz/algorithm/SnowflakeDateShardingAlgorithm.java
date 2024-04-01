@@ -31,9 +31,9 @@ import java.util.*;
 public final class SnowflakeDateShardingAlgorithm implements ComplexKeysShardingAlgorithm<Date> {
 
     // 定义分片键的列名
-    private final String messageSendId = "msg_id";
+    private final String messageSendId = "msg_id";  //消息ID
     
-    private final String sendTime = "create_time";
+    private final String sendTime = "create_time";  //时间
     
     @Override
     public Collection<String> doSharding(Collection availableTargetNames, ComplexKeysShardingValue shardingValue) {

@@ -27,7 +27,8 @@ public class MessageWrapper<T> implements Serializable { //Serializable接口表
     private T data;  //消息数据
 }
 /*
+实现目标：
 MessageWrapper类提供了一个通用的消息包装结构，
-其中包含了消息的唯一标识符、追踪标识符、时间戳、关键字和实际数据。
-这种结构可以用于在分布式系统中传递消息，保证消息的唯一性、时序性和追踪性
+包含了消息的唯一标识符、追踪标识符、时间戳、关键字和实际数据。
+在分布式系统中传递消息，保证消息的唯一性、时序性和追踪性
  */
