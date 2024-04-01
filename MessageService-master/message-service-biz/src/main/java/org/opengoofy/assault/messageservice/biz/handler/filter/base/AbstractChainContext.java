@@ -30,9 +30,6 @@ import java.util.Map;
 
 /**
  * 抽象责任链上下文
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Component
 public final class AbstractChainContext<T> implements CommandLineRunner {

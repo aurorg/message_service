@@ -18,9 +18,6 @@ import java.util.List;
 
 /**
  * 消息发送控制层
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @RestController
 @RequiredArgsConstructor

@@ -7,9 +7,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * MQ 回调传递实体
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @NoArgsConstructor

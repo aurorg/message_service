@@ -12,8 +12,6 @@ import java.util.List;
  * <p>
  * 引用自阿里云官方网址 https://help.aliyun.com/document_detail/419277.html
  *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

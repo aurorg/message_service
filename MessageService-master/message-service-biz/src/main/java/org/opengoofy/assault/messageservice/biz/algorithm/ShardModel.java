@@ -11,9 +11,6 @@ import java.util.Set;
 
 /**
  * 计算分片表地址
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 public class ShardModel {

@@ -9,9 +9,6 @@ import org.opengoofy.assault.framework.starter.database.BaseDO;
 
 /**
  * 消息发送记录参数实体
- *7
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @NoArgsConstructor

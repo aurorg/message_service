@@ -6,9 +6,6 @@ import java.util.Map;
 
 /**
  * MQ 回调实体
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 public class MQCallbackDTO {

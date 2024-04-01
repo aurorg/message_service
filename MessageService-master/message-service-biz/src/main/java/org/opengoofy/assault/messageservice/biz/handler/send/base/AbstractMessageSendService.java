@@ -14,9 +14,6 @@ import static org.opengoofy.assault.messageservice.biz.common.MessageConstants.S
 
 /**
  * 抽象消息发送服务
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 public abstract class AbstractMessageSendService implements MessageSendService, AbstractExecuteStrategy<MessageSendEvent, MessagePlatformSendResponseDTO> {

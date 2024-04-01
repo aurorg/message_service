@@ -19,9 +19,6 @@ package org.opengoofy.assault.messageservice.biz.base.strategy;
 
 /**
  * 策略执行抽象
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 public interface AbstractExecuteStrategy<REQUEST, RESPONSE> {
     

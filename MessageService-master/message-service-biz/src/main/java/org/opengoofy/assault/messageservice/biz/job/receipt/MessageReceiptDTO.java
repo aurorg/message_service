@@ -8,9 +8,6 @@ import java.util.Date;
 
 /**
  * 三方渠道商短信回执参数
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @NoArgsConstructor

@@ -5,9 +5,6 @@ import org.opengoofy.assault.messageservice.biz.mq.event.MessageSendEvent;
 
 /**
  * 消息发送接口
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 public interface MessageSendService {
     

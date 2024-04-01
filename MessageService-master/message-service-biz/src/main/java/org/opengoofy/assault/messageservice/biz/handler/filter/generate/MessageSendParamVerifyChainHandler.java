@@ -12,9 +12,6 @@ import java.util.List;
 
 /**
  * 消息发送判断参数是否正确
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Component
 @RequiredArgsConstructor

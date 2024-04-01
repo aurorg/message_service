@@ -11,9 +11,6 @@ import java.util.List;
  * 腾讯短信回执拉取执行器
  * <p>
  * 引用自腾讯云官方网址 https://cloud.tencent.com/document/product/382/55977
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

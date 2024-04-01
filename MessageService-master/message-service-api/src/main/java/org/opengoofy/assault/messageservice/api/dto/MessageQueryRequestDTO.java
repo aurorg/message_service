@@ -6,9 +6,6 @@ import java.util.Date;
 
 /**
  * 消息查询入参实体
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 public class MessageQueryRequestDTO {

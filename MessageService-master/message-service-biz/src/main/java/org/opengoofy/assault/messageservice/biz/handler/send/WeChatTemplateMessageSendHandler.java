@@ -30,9 +30,6 @@ import static org.opengoofy.assault.messageservice.biz.common.MessageTypeEnum.WE
 
 /**
  * 微信模板消息发送组件
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

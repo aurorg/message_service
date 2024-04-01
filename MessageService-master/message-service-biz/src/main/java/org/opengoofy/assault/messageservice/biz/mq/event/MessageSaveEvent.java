@@ -9,9 +9,6 @@ import org.opengoofy.assault.messageservice.biz.dto.MessagePlatformSendResponseD
 
 /**
  * 消息保存事件
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @Builder

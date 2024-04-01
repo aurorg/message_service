@@ -26,9 +26,6 @@ import java.util.stream.Collectors;
 
 /**
  * 抽象短信回执拉取模板
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 public abstract class AbstractSmsMessageReceiptTemplate implements DisposableBean {

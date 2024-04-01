@@ -6,9 +6,6 @@ import org.opengoofy.assault.framework.starter.database.BaseDO;
 
 /**
  * 渠道和 Source 对应关系实体
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @TableName("channel_relation")

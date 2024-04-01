@@ -6,9 +6,6 @@ import java.util.List;
 
 /**
  * 消息常量类
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 public class MessageConstants {
     

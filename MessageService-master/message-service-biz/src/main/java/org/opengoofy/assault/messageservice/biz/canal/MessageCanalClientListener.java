@@ -31,9 +31,6 @@ import static org.opengoofy.assault.messageservice.biz.common.MessageCacheConsta
 
 /**
  * 消息监听
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

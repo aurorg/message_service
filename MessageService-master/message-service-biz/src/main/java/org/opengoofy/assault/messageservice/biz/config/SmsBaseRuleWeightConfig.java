@@ -6,9 +6,6 @@ import java.util.List;
 
 /**
  * 基础短信权重配置接口
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 public interface SmsBaseRuleWeightConfig {
     

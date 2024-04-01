@@ -16,9 +16,6 @@ import static org.opengoofy.assault.messageservice.biz.common.MessageTypeEnum.ge
 
 /**
  * 消息发送渠道选择器
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

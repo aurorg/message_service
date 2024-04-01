@@ -22,9 +22,6 @@ import static org.opengoofy.assault.messageservice.biz.common.MessageConstants.S
 
 /**
  * 阿里云短信发送组件
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

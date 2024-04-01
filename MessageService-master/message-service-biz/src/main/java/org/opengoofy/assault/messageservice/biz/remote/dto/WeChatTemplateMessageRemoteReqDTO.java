@@ -13,9 +13,6 @@ import java.util.Map;
  * <p>
  * PS：此处为了容易理解，跳转小程序等参数都没有添加。如需了解访问：
  * <a href="https://developers.weixin.qq.com/doc/offiaccount/Message_Management/Template_Message_Interface.html#%E5%8F%91%E9%80%81%E6%A8%A1%E6%9D%BF%E6%B6%88%E6%81%AF"/>
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @NoArgsConstructor

@@ -7,9 +7,6 @@ import java.util.List;
 
 /**
  * 消息查询接口
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 public interface MessageQueryService {
     

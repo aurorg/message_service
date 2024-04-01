@@ -7,9 +7,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * 消息发送出参实体
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @NoArgsConstructor

@@ -20,9 +20,6 @@ import java.util.Objects;
 /**
  * 消息发送接口实现
  * 该类负责处理消息发送请求，包括消息合法性验证、构建消息发送事件、消息发送及响应。
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Service

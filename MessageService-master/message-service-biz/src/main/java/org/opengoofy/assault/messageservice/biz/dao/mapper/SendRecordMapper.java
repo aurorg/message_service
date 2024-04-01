@@ -10,9 +10,6 @@ import java.util.List;
 
 /**
  * 消息发送记录持久层
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 public interface SendRecordMapper extends BaseMapper<SendRecordDO> {
     

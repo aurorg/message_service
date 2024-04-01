@@ -2,9 +2,6 @@ package org.opengoofy.assault.messageservice.biz.common;
 
 /**
  * 消息缓存常量类
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 public class MessageCacheConstants {
     

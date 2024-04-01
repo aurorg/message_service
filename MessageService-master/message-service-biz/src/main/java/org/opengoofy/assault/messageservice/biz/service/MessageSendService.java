@@ -5,9 +5,6 @@ import org.opengoofy.assault.messageservice.api.dto.MessageSendResponseDTO;
 
 /**
  * 消息发送接口
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 public interface MessageSendService {
     

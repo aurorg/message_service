@@ -6,9 +6,6 @@ import org.opengoofy.assault.messageservice.biz.handler.filter.base.AbstractChai
 
 /**
  * 消息发送责任链过滤器
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 public interface MessageSendChainFilter<T extends MessageSendRequestDTO> extends AbstractChainHandler<MessageSendRequestDTO> {
     

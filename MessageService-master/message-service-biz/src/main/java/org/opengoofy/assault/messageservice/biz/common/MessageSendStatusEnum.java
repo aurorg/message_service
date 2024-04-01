@@ -5,9 +5,6 @@ import lombok.RequiredArgsConstructor;
 
 /**
  * 消息发送状态枚举
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @RequiredArgsConstructor
 public enum MessageSendStatusEnum {

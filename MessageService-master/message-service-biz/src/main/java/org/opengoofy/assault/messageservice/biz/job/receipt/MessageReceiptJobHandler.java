@@ -10,9 +10,6 @@ import java.util.List;
 
 /**
  * 短信回执定时任务
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Component
 @RequiredArgsConstructor

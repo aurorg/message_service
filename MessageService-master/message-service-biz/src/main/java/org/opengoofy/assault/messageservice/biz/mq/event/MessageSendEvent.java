@@ -10,9 +10,6 @@ import java.util.List;
 
 /**
  * 消息发送事件
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @Builder

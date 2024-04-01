@@ -8,9 +8,6 @@ import java.util.Date;
 
 /**
  * 消息发送记录实体
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @TableName("send_record")

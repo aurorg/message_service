@@ -6,9 +6,6 @@ import org.opengoofy.assault.framework.starter.database.BaseDO;
 
 /**
  * 业务方配置实体
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @TableName("source_config")

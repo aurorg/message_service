@@ -18,9 +18,6 @@ import java.util.List;
 /**
  * 消息查询接口
  *该类负责根据查询请求参数进行消息查询，并返回查询结果。
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Service

@@ -9,9 +9,6 @@ import java.util.Objects;
 
 /**
  * 消息发送生成判断参数不为空
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Component
 public class MessageSendParamNotNullChainHandler implements MessageSendChainFilter<MessageSendRequestDTO> {

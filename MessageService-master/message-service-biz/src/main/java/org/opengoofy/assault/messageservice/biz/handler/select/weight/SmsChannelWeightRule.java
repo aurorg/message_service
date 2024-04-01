@@ -16,9 +16,6 @@ import static org.opengoofy.assault.messageservice.biz.common.MessageTypeEnum.SM
 
 /**
  * 短信渠道权重规则
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

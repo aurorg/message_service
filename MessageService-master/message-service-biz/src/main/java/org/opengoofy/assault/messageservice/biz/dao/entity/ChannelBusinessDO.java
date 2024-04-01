@@ -5,9 +5,6 @@ import lombok.Data;
 
 /**
  * 渠道配置实体
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @TableName("channel_business")

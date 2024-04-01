@@ -29,9 +29,6 @@ import static org.opengoofy.assault.messageservice.biz.common.MessageConstants.S
  * 公共消息保存消费者，包括：短信、微信、企业微信、邮箱等
  *
  * RocketMQ消息消费者的处理方法，用于处理消息发送成功后的保存操作
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

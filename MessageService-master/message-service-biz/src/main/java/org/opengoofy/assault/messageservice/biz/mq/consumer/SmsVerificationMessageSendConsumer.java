@@ -16,9 +16,6 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * 短信验证码消息发送消费者
  * 该类是处理短信验证码类型消息发送的消息消费者
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

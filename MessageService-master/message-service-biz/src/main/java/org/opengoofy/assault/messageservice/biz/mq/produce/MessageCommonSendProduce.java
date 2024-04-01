@@ -35,9 +35,6 @@ import static org.opengoofy.assault.messageservice.biz.common.MessageRocketMQCon
 
 /**
  * 消息发送生产者
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

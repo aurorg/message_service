@@ -6,9 +6,6 @@ import java.util.List;
 
 /**
  * 消息发送入参实体
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 public class MessageSendRequestDTO {

@@ -18,9 +18,6 @@ import java.util.concurrent.TimeUnit;
 /**
  * 其它消息发送消费者
  *该类是处理其它类型消息发送的消息消费者
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Slf4j
 @Component

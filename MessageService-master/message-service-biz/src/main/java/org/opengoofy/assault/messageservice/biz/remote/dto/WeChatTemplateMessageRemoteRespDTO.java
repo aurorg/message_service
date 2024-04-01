@@ -7,9 +7,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * 微信模板消息发送远程调用返回实体
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @NoArgsConstructor

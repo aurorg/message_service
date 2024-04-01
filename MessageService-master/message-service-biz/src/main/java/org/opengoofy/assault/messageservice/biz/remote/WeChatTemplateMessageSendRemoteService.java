@@ -9,9 +9,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * 微信模板消息发送远程调用服务
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @FeignClient(value = "weChatTemplateMessageSendRemoteService", url = "https://api.weixin.qq.com")
 public interface WeChatTemplateMessageSendRemoteService {

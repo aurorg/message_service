@@ -9,9 +9,6 @@ import java.io.Serializable;
 
 /**
  * 消息体包装
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @RequiredArgsConstructor

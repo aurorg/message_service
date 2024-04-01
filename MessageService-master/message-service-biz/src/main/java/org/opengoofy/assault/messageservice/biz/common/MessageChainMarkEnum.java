@@ -19,9 +19,6 @@ package org.opengoofy.assault.messageservice.biz.common;
 
 /**
  * 消息相关责任链 Mark 枚举
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 public enum MessageChainMarkEnum {
     

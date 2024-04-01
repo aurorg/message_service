@@ -8,9 +8,6 @@ import java.util.List;
 
 /**
  * 营销短信发送渠道商权重配置
- *
- * @author chen.ma
- * @github https://github.com/opengoofy
  */
 @Data
 @Component
