@@ -66,6 +66,3 @@ public final class AbstractChainContext<T> implements CommandLineRunner {
     }
 }
 
-/*
-责任链模式是一种行为设计模式，其中处理器（handler）形成链，并按照顺序依次处理请求。
- */
